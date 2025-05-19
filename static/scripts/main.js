@@ -828,7 +828,7 @@ function startCapsuleLoop() {
                                                                         "work" == $currentCapsule.attr("data-name") && hideWorkSlider(),
                                                                         makeTransitionToSingle(),
                                                                         animateLightsColor(),
-                                                                        changeMainTitle("Удерживай"),
+                                                                        changeMainTitle("Hold it down"),
                                                                         changeActionAdvice("Press and hold"),
                                                                         $(".navigate-single-button-advice").removeClass("blink-slow blink"),
                                                                         disappearHeaderAndFooter())
