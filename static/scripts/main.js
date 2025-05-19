@@ -234,7 +234,7 @@ function mod(e, t) {
 
 function home_docReady() {
     fillCapsuleDataName(),
-    changeActionAdvice("нажми и держи"),
+    changeActionAdvice("Press and hold"),
     isTouchDevice() && $("body").addClass("touch-device"),
     isTouchDevice() && ($(".bottom-bar .sound-container").css("display", "none"),
                        $(".home-social-awards-container").addClass("without-sounds"),
@@ -447,7 +447,7 @@ function home_initializeTweens() {
         paused: !0,
         onStart: function() {
             var e = .8;
-            $(".bottom-bar .color-container .color-text").text("Нажми меня"), TweenLite.set(".bottom-bar .color-container .color-text", {
+            $(".bottom-bar .color-container .color-text").text("Press and hold"), TweenLite.set(".bottom-bar .color-container .color-text", {
                 y: 0,
                 opacity: 0
             }), TweenLite.to(".bottom-bar .color-container .color-text", 1.2 * e, {
@@ -829,7 +829,7 @@ function startCapsuleLoop() {
                                                                         makeTransitionToSingle(),
                                                                         animateLightsColor(),
                                                                         changeMainTitle("Удерживай"),
-                                                                        changeActionAdvice("нажми и держи"),
+                                                                        changeActionAdvice("Press and hold"),
                                                                         $(".navigate-single-button-advice").removeClass("blink-slow blink"),
                                                                         disappearHeaderAndFooter())
 }
@@ -855,7 +855,7 @@ function endCapsuleLoop() {
                 changeColorMainTitle("font-black"),
                 openSingleOfSectionPopup(),
                 $(" .section-home .background-bar .progress-bar").css("left", "-100%"),
-                changeActionAdvice("нажми и держи"),
+                changeActionAdvice("Press and hold"),
                 isTouchDevice() || $(".custom-cursor-wrapper").css("display", "block"),
                 $(".navigate-single-button-advice").removeClass("blink-slow blink"),
                 $(".navigate-single-button-advice").addClass("blink-slow")
@@ -868,7 +868,7 @@ function endCapsuleLoop() {
                                                         : e = $currentCapsule.find(".capsule-main-title").text(),
                                                           changeMainTitle(e),
                                                           appearHeaderAndFooter(),
-                                                          changeActionAdvice("нажми и держи"),
+                                                          changeActionAdvice("Press and hold"),
                                                           isTouchDevice() || $(".custom-cursor-wrapper").css("display", "block"),
                                                           $(".navigate-single-button-advice").removeClass("blink-slow blink"),
                                                           $(".navigate-single-button-advice").addClass("blink-slow"),
@@ -1382,7 +1382,7 @@ function prepareCapsuleByName(e, t) {
         "pointer-events": "auto",
         delay: n,
         opacity: 1
-    }), isTouchDevice() ? changeActionAdvice("Нажми & Держи") : (changeActionAdvice("Нажми & Держи"), $(".custom-cursor-wrapper").css("display", "block"))) : (TweenMax.to($(".section-home .navigate-single-button-container"), 0, {
+    }), isTouchDevice() ? changeActionAdvice("Press and hold") : (changeActionAdvice("Press and hold"), $(".custom-cursor-wrapper").css("display", "block"))) : (TweenMax.to($(".section-home .navigate-single-button-container"), 0, {
         "pointer-events": "none",
         opacity: 0
     }), TweenMax.to($(".home-social-awards-container"), .5, {
@@ -1506,7 +1506,7 @@ function animateCapsulePopup() {
     top_bar.style.zIndex = "9",
     bottom_bar.style.zIndex = "9",
     main_title_container.style.zIndex = "7",
-    bottom_bar.querySelector(".center-container p").innerHTML = "Листайте вниз",
+    bottom_bar.querySelector(".center-container p").innerHTML = "Scroll dawn",
     bottom_bar.querySelector(".center-container").classList.add("blink"),
     bottom_bar.querySelector(".home-center-container").style.display = "none",
 
