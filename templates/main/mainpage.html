@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Фонд мира{% endblock %}
+{% block content %}
+
+    <section class="section-home">
+        {% include 'main/section.html' %}
+    </section>
+
+    <div class="fo-canvas"></div>
+
+    {% include 'items/top_bar.html' %}
+
+    {% include 'items/bottom_bar.html' %}
+
+    <div class="main-title-container">
+        <p class="font-liquido-h1 font-white content-animable"></p>
+    </div>
+
+    <div class="capsules-container">
+      <!-- not-showed: не показывать в меню, showing: загружать по умолчанию, current: текущая страница -->
+        <div class="capsule not-showed current showing " data-color="#ffffff" data-name="home" data-href="/">
+            {% include 'items/home.html' %}
+        </div>
+        <div class="capsule " data-color="#0263ff" data-name="О фонде" data-href="/about/">
+            {% include 'items/about.html' %}
+        </div>
+        <div class="capsule " data-color="#f2545b" data-name="Проекты" data-href="/work/">
+            {% include 'items/proects.html' %}
+        </div>
+        <div class="capsule " data-color="#ffc857" data-name="Друзья" data-href="/partners/">
+            {% include 'items/friends.html' %}
+        </div>
+        <div class="capsule " data-color="#8c3ba7" data-name="Сервис" data-href="/awards/">
+            {% include 'items/service.html' %}
+        </div>
+        <div class="capsule not-showed " data-color="#540000" data-name="Пункт меню" data-href="/awwwards/">
+            {% include 'items/other_page.html' %}
+        </div>
+    </div>
+
+{% endblock %}
