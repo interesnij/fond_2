@@ -9,7 +9,7 @@ urlpatterns = [
     re_path(r'^terms/', include('terms.urls')),
     re_path(r'^policy/', include('policy.urls')),
     re_path(r'^friends/', include('friends.urls')),
-    re_path(r'^proects/', include('works.urls')),
+    re_path(r'^projects/', include('works.urls')),
     re_path(r'^service/', include('service.urls')),
     re_path(r'^about/', include('about.urls')),
     re_path(r'^ckeditor/', include('ckeditor_uploader.urls')),
