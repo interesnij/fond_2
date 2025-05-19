@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
     <meta name="msapplication-TileImage" content="/static/images/duck-144x144.png">
@@ -7,12 +8,12 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#202020">
-    <meta name="apple-mobile-web-app-title" content="Описание сайта">
+    <meta name="apple-mobile-web-app-title" content="description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>О фонде</title>
-    <meta name="description" content="Описание сайта" />
+    <title>Main page</title>
+    <meta name="description" content="description" />
     <link href="/static/styles/digital.css" rel="stylesheet" />
     <link id='wp-block-library-css' href="/static/styles/style.css" media="all" rel="stylesheet" />
 
@@ -44,13 +45,21 @@
 
     {% include 'items/preload.html' %}
 
-		{% block content %}
-		{% endblock %}
-    
+    {% block content %}
+    {% endblock %}
+
     <div class="dinamic-popup popup"></div>
     <div class="special-popup popup"></div>
 
-    <svg class="transition-curtain" viewBox="0 0 100 100" preserveAspectRatio="none"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%"><stop id="transition-curtain-stop-0" offset="0%" /><stop id="transition-curtain-stop-100" offset="100%" /></linearGradient></defs><path class="capa capa3" style="fill:url(#grad1)"></path></svg>
+    <svg class="transition-curtain" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop id="transition-curtain-stop-0" offset="0%" />
+                <stop id="transition-curtain-stop-100" offset="100%" />
+            </linearGradient>
+        </defs>
+        <path class="capa capa3" style="fill:url(#grad1)"></path>
+    </svg>
     <div class="custom-cursor-wrapper">
         <div class="custom-cursor">
             <div class="cursor-symbol">
@@ -64,23 +73,23 @@
         </div>
     </div>
     <div class="audios-container">
-      <audio class="audio_regular" src="/static/audio/bg.mp3" loop preload="auto"></audio>
-      <audio class="audio_action" src="/static/audio/action.mp3" loop preload="auto"></audio>
-      <audio class="audio_hover" src="/static/audio/hover1.mp3" preload="auto"></audio>
-      <audio class="audio_hover" src="/static/audio/hover2.mp3" preload="auto"></audio>
-      <audio class="audio_hover" src="/static/audio/hover3.mp3" preload="auto"></audio>
-      <audio class="audio_hover" src="/static/audio/hover4.mp3" preload="auto"></audio>
-      <audio class="audio_hover" src="/static/audio/hover5.mp3" preload="auto"></audio>
-      <audio class="audio_preload_image" src="/static/audio/hover1.mp3" preload="auto"></audio>
-      <audio class="audio_preload_image" src="/static/audio/hover2.mp3" preload="auto"></audio>
-      <audio class="audio_preload_image" src="/static/audio/hover3.mp3" preload="auto"></audio>
-      <audio class="audio_preload_image" src="/static/audio/hover4.mp3" preload="auto"></audio>
-      <audio class="audio_preload_image" src="/static/audio/hover5.mp3" preload="auto"></audio>
-      <audio class="audio_capsule_loaded" src="/static/audio/capsule-loaded.mp3" preload="auto"></audio>
+        <audio class="audio_regular" src="/static/audio/bg.mp3" loop preload="auto"></audio>
+        <audio class="audio_action" src="/static/audio/action.mp3" loop preload="auto"></audio>
+        <audio class="audio_hover" src="/static/audio/hover1.mp3" preload="auto"></audio>
+        <audio class="audio_hover" src="/static/audio/hover2.mp3" preload="auto"></audio>
+        <audio class="audio_hover" src="/static/audio/hover3.mp3" preload="auto"></audio>
+        <audio class="audio_hover" src="/static/audio/hover4.mp3" preload="auto"></audio>
+        <audio class="audio_hover" src="/static/audio/hover5.mp3" preload="auto"></audio>
+        <audio class="audio_preload_image" src="/static/audio/hover1.mp3" preload="auto"></audio>
+        <audio class="audio_preload_image" src="/static/audio/hover2.mp3" preload="auto"></audio>
+        <audio class="audio_preload_image" src="/static/audio/hover3.mp3" preload="auto"></audio>
+        <audio class="audio_preload_image" src="/static/audio/hover4.mp3" preload="auto"></audio>
+        <audio class="audio_preload_image" src="/static/audio/hover5.mp3" preload="auto"></audio>
+        <audio class="audio_capsule_loaded" src="/static/audio/capsule-loaded.mp3" preload="auto"></audio>
     </div>
 
-		<div class="credits-popup">
-      {% include 'items/credits_popup.html' %}
+    <div class="credits-popup">
+        {% include 'items/credits_popup.html' %}
     </div>
 
     <div class="gems-popup menu-popup">
@@ -91,7 +100,7 @@
                     <div class="stick stick2"></div>
                 </div>
                 <div class="back-container">
-                    <p class="font-menu font-gray general-hover hover-white back-text">Назад</p>
+                    <p class="font-menu font-gray general-hover hover-white back-text">Back</p>
                 </div>
             </div>
             <div class="general-container">

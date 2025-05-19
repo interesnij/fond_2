@@ -1,5 +1,5 @@
 <div class="capsule-floating-object">
-  <img src="/static/images/work.png" class="image-path"></img>
+    <img src="/static/images/work.png" class="image-path"></img>
 </div>
 
 {% for object in works %}
@@ -11,15 +11,15 @@
                 <div class="stick stick2"></div>
             </div>
             <div class="back-container">
-                <p class="font-menu font-gray general-hover hover-white back-text">Назад</p>
+                <p class="font-menu font-gray general-hover hover-white back-text">Back</p>
             </div>
         </div>
         <div class="popup-content-work-container">
             <div class="hand-image-container parallax-container"></div>
             <div class="work-content">
                 <div class="work-background-image-container">
-                  <img class="background-image" src="{{ object.get_first_photo }}">
-                  <div class="background-gradient"></div>
+                    <img class="background-image" src="{{ object.get_first_photo }}">
+                    <div class="background-gradient"></div>
                 </div>
                 <div class="work-text-container">
                     <div class="work-text">
@@ -27,10 +27,11 @@
                             <p class="font-title font-black center-text-title js-animate" data-animation="top-opacity" ">
                               {{ object.title }}
                             </p>
-                            <p class=" font-h5 font-black center-text-description js-animate" data-animation="top-opacity">
-                              {{ object.description|safe }}
+                            <p class=" font-h5 font-black center-text-description js-animate"
+                                data-animation="top-opacity">
+                                {{ object.description|safe }}
                             </p>
-                          </div>
+                        </div>
                     </div>
                 </div>
                 {% for image in object.photo_work.all %}
@@ -55,9 +56,11 @@
 
 {% include 'items/capsule_icon.html' %}
 
-<div class="capsule-three-background-path" data-three-path="/static/images/objects/hand1.obj" data-scale="1" data-rotation="0"></div>
+<div class="capsule-three-background-path" data-three-path="/static/images/objects/hand1.obj" data-scale="1"
+    data-rotation="0"></div>
 <div class="meta-data">
-    <p class="title">Проекты | Фонд мира</p>
-    <p class="description">Фонд организован для помощи нравственным движениям в организации эффектных интернет-ресурсов.</p>
+    <p class="title">Proects</p>
+    <p class="description">Proects.
+    </p>
     <div class="image" data-src="/static/images/thumb_black.jpg"></div>
 </div>
